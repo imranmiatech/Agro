@@ -14,7 +14,7 @@ const app = express()
 const port = process.env.PORT || 4000
 connectDB()
 connectCloudinary()
-const allowedOrigins = ["http://localhost:5174", "http://localhost:5173"]
+const allowedOrigins = ["https://agro-eight-dusky.vercel.app", "http://localhost:5174"]
 
 //middleware
 app.use(express.json())
