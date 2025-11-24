@@ -27,6 +27,10 @@ const PlaceOrder = () => {
   }
 const onSubmitHanller = async (event) => {
   event.preventDefault();
+   if (!token) {
+    toast.error("Please login first!");
+    return navigate('/login');
+  }
   try {
     let orderItems = [];
 
