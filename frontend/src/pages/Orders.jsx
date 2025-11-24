@@ -13,7 +13,7 @@ const Orders = () => {
       if(!token){
         return null
       }
-      const response = await axios.post(`${backendUrl}/api/order/userorders`, {}, {headers: {token}})
+      const response = await axios.post("https://agro-backend-chi.vercel.app/api/order/userorders", {}, {headers: {token}})
       if(response.data.success){
         let allOrdersItem = []
         response.data.orders.map((order)=>{
