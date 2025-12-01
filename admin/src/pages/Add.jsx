@@ -15,7 +15,6 @@ const Add = ({ token }) => {
   const [price, setPrice] = useState("");
   const [bestseller, setBestseller] = useState(false);
   const [sizes, setSizes] = useState([]);
-  const backendUrl = import.meta.env.VITE_BACKEND_URL;
   const onSubmitHandler = async (e) => {
     e.preventDefault();
     try {
