@@ -9,7 +9,7 @@ const List = ({token}) => {
   const backendUrl = import.meta.env.VITE_BACKEND_URL;
   const fetchList = async () => {
         try {
-          const response = await axios.get(`${backendUrl}/api/product/list`)
+          const response = await axios.get("https://agro-backend-chi.vercel.app/api/product/list")
           if(response.data.success){
             setList(response.data.products)
           } else{
